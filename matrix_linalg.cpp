@@ -114,22 +114,25 @@ public:
 
 template<typename T>
 void solve() {
+    string all_ops;
     vector<node_operations<T> *> requests;
     matrix<T> cur_matrix;
     cur_matrix.matrix_scanf();
+    all_ops += cur_matrix.print();
     cout
-            << "functions: \n plus i j lambda\n multi i lamblda \n div i lambda \n swap i j\n show \n save \n enter exit to exit\n";
-    string all_ops;
+            << "functions: \n plus i j lambda\n multi i lamblda \n div i lambda \n swap i j\n show \n save \n print and show(ps) \n enter exit to exit\n";
     while (true) {
         char buffer[100 + 1];
         scanf("%100s", buffer);
         string s(buffer);
-        if (s == "exit") {
+        if (s == "exit" || s == "e") {
             break;
         }
-        if (s == "print" || s == "p") {
+        if (s == "print" || s == "p" || s == "show") {
             //show and clear;
-            all_ops += cur_matrix.print_do(requests);
+            if (!requests.empty()) {
+                all_ops += cur_matrix.print_do(requests);
+            }
             all_ops += cur_matrix.print();
             cout << all_ops;
             all_ops = "";
@@ -137,8 +140,17 @@ void solve() {
         }
         if (s == "save" || s == "s") {
             //save and continue
-            all_ops += cur_matrix.print_do(requests);
+            if (!requests.empty()) {
+                all_ops += cur_matrix.print_do(requests);
+            }
             all_ops += cur_matrix.print();
+        }
+        if (s == "p and s" || s == "ps") {
+            if (!requests.empty()) {
+                all_ops += cur_matrix.print_do(requests);
+            }
+            all_ops += cur_matrix.print();
+            cout << all_ops;
         }
         if (s == "multi" || s == "m") {
             size_t pos;
