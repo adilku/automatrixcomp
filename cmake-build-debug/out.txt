@@ -1,0 +1,2 @@
+Choose type for matrix operations
+ enter 0 for int or 1 for Rational

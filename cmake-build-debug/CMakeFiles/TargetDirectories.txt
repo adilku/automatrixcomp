@@ -1,0 +1,3 @@
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/cmake-build-debug/CMakeFiles/matrix_tex_cheatl.dir

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/matrix_linalg.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+string
+-
+cstdlib
+-
+cassert
+-
+climits
+-
+random
+-
+typeinfo
+-
+sstream
+-
+requests.h
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/requests.h
+
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/rational.h
+iostream
+-
+
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/requests.h
+rational.h
+/Users/adilkhankussidenov/Documents/c++++/matrix_tex_cheat/automatrixcomp/rational.h
+
